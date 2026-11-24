@@ -1,0 +1,36 @@
+{
+  "format": 1,
+  "dev_set": "85ad6d96fbf76ee64d9fb6339b3bf342b07128a2ebadc0a10f008c95dac01a48",
+  "created": "2026-11-24T05:04:24Z",
+  "harness": {
+    "name": "physical-eng",
+    "model_api": "google-cloud/gemini-3.8-flash",
+    "tree": "a419796f21a7475565105204454bcd49eab18c4065db90329b4555ec3786948a",
+    "files": {
+      ".gitignore": "100644 ad33d1662cf3af68cf70f8bfddad68a29d573d59",
+      "README.md": "100644 a4fad72e81ca01ccd7ca9e8064cc5944a858a1eb",
+      "requirements.txt": "100644 13ba6dbe5a230d71da63dd42ee49e86f580056dc",
+      "serve.py": "100644 711cebeceb0656932afc76f6ad3f01f26efbf74c",
+      "submission.yaml": "100644 3405bb2914c16c15db0383155e1ef4c1ca2e8720",
+      "taskbridge.py": "100644 26cc3d6cf8dbcaed859731ce9a6881f4ca8bfe40"
+    },
+    "commit": null,
+    "dirty": false
+  },
+  "tasks": {
+    "data-center-site-model": {
+      "run": "trial-site-model-flash",
+      "trial": "data-center-site-model__ZmXSgic",
+      "ended": "ok",
+      "reward": 1.0,
+      "tree": "a419796f21a7475565105204454bcd49eab18c4065db90329b4555ec3786948a",
+      "dev_set": "85ad6d96fbf76ee64d9fb6339b3bf342b07128a2ebadc0a10f008c95dac01a48",
+      "files": {
+        "app/files/frontier__DCBim__p6_002/submission/model.ifc": "85362cfa750aaebe2e3e5cae3e65745d7c75f3c4"
+      },
+      "final_message": "319efad12f11aeb6640e76df05c7c81998af7ff4",
+      "deleted": [],
+      "skipped": []
+    }
+  }
+}
