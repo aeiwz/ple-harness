@@ -1,4 +1,25 @@
-# custom-openai: full-featured custom harness on the OpenAI API
+# physical-eng: PLE agent harness entry
+
+Entry for **Google - Agent Harness on Physical-Engineering's Last Exam** (Kaggle).
+
+- **Model:** `google-cloud/gemini-3.8-flash` (see `submission.yaml`)
+- **Harness:** the official kit's `custom-openai` starter ([google-research/ple](https://github.com/google-research/ple), Apache-2.0), unmodified apart from the entry name and model
+- **Dev artifacts:** `artifacts/` holds the run exported by `eval/run.py` (currently 1 of 29 dev tasks: `data-center-site-model`, score 1.000)
+
+Check and run with the official kit:
+
+```bash
+uv run python -m kit check <this repo>
+uv run python eval/run.py <this repo>
+```
+
+On Apple Silicon, export `DOCKER_DEFAULT_PLATFORM=linux/amd64` before running the kit.
+
+The rest of this file is the starter's original documentation.
+
+---
+
+## custom-openai: full-featured custom harness on the OpenAI API
 
 The most complete reference harness in this repository. It talks to the model via the OpenAI Chat Completions API (the Responses API for OpenAI's GPT-6 models) using `MODEL_BASE_URL`, `MODEL_API_KEY`, and `MODEL_NAME`, so the exact same code runs against any `google-cloud/<id>` model (by default `google-cloud/gpt-oss-120b`) and, for local runs, against OpenAI or a model you serve ([`local-model`](../local-model/) uses `serve.py` unchanged). For a stripped-down version of the core loop in under 250 lines, see [`minimal`](../minimal/).
 
